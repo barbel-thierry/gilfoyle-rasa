@@ -22,6 +22,7 @@ cloudpickle==1.6.0
 colorclass==2.2.0
 coloredlogs==14.3
 colorhash==1.0.3
+coverage==5.5
 cryptography==3.4.6
 cycler==0.10.0
 cymem==2.0.5
@@ -45,6 +46,7 @@ httptools==0.1.1
 httpx==0.15.4
 humanfriendly==9.1
 idna==2.10
+iniconfig==1.1.1
 Jinja2==2.11.3
 jmespath==0.10.0
 joblib==0.15.1
@@ -68,10 +70,12 @@ packaging==20.9
 pamqp==2.3.0
 pathy==0.4.0
 Pillow==8.1.2
+pluggy==0.13.1
 preshed==3.0.5
 prompt-toolkit==2.0.10
 protobuf==3.15.6
 psycopg2-binary==2.8.6
+py==1.10.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
@@ -83,6 +87,8 @@ pymongo==3.10.1
 pyparsing==2.4.7
 pyrsistent==0.17.3
 pyTelegramBotAPI==3.7.6
+pytest==6.2.2
+pytest-cov==2.11.1
 python-crfsuite==0.9.7
 python-dateutil==2.8.1
 python-engineio==3.13.2
@@ -131,6 +137,7 @@ termcolor==1.1.0
 terminaltables==3.1.0
 thinc==8.0.2
 threadpoolctl==2.1.0
+toml==0.10.2
 tqdm==4.59.0
 twilio==6.50.1
 typeguard==2.11.1
