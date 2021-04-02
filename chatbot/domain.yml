@@ -1,0 +1,72 @@
+version: "2.0"
+
+intents:
+  - gump
+  - poets
+  - star
+  - fight
+  - potter
+  - pulp
+  - bad
+  - taxi
+  - black
+  - apocalyspe
+  - back
+  - element
+  - silence
+  - scarface
+  - suspects
+  - train
+
+responses:
+  utter_gump:
+    - text: "La vie c’est comme une boîte de chocolats, on ne sait jamais sur quoi on va tomber. - Tom Hanks, Forrest Gump (Robert Zemeckis)"
+
+  utter_poets:
+    - text: "Peu importe ce qu’on pourra vous dire, les mots et les idées peuvent changer le monde. - Robin Williams, Le cercle des poètes disparus (Peter Weir)"
+
+  utter_star:
+    - text: "Luke, je suis ton père... - David Prowse, La guerre des étoiles : L’empire contre-attaque (George Lucas)"
+
+  utter_fight:
+    - text: "Les choses que l’on possède finissent par nous posséder. - Brad Pitt, Fight Club (David Fincher)"
+
+  utter_potter:
+    - text: "Maintenant, si ça ne vous dérange pas, je vais me coucher, avant que l'un de vous ait encore une brillante idée pour nous faire tuer…ou pire, nous faire expulser ! - Emma Watson, Harry Potter à l’école des sorciers (Chris Columbus)"
+
+  utter_pulp:
+    - text: "C’est à une demi-heure d’ici. J’y suis dans dix minutes. - Harvey Keitel, Pulp Fiction (Quentin Tarantino)"
+
+  utter_bad:
+    - text: "Tu vois, le monde se divise en deux catégories: ceux qui ont un pistolet chargé et ceux qui creusent. Toi tu creuses. - Clint Eastwood, Le bon, la brute et le truand (Sergio Leone)"
+
+  utter_taxi:
+    - text: "C’est à moi que tu parles ? C’est à moi que tu parles ?? - Robert De Niro, Taxi Driver (Martin Scorsese)"
+
+  utter_black:
+    - text: "La différence entre toi et moi, c’est que moi j’ai la classe. - Will Smith, Men in black (Barry Sonnenfeld)"
+
+  utter_apocalyspe:
+    - text: "J’adore l’odeur du napalm au petit matin. - Robert Duval, Apocalypse now (Francis Ford Coppola)"
+
+  utter_back:
+    - text: "Allo McFly, y’a personne au bout du fil ! Faut réfléchir McFLy ! - Thomas F.Wilson, Retour vers le futur 2, (Robert Zemeckis)"
+
+  utter_element:
+    - text: "Leilou Dallas, multipass. Muultiipaass. - Milla Jovovich, Le cinquième élément (Luc Besson)"
+
+  utter_silence:
+    - text: "J’ai dégusté son foie avec des fèves au beurre et un excellent Chianti. - Anthony Hopkins, Le silence des agneaux (Jonathan Demme)"
+
+  utter_scarface:
+    - text: "J’ai les mains faites pour l’or, et elles sont dans la merde ! - Al Pacino, Scarface (Brian de Palma)"
+
+  utter_suspects:
+    - text: "Le coup le plus rusé que le diable ait jamais réussi, c’est de faire croire à tout le monde qu’il n’existait pas. - Kevin Spacey, Usual Suspects (Bryan Singer)"
+
+  utter_train:
+    - text: "On se serait shooté à la vitamine C si cela avait été illégal... - Ewan McGregor, Trainspotting (Danny Boyle)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

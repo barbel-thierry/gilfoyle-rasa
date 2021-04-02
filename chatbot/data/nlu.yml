@@ -1,0 +1,88 @@
+version: "2.0"
+
+nlu:
+  - intent: gump
+    examples: |
+      - chocolat
+      - tombe
+      - vie
+
+  - intent: poets
+    examples: |
+      - mot
+      - idée
+      - monde
+
+  - intent: star
+    examples: |
+      - père
+
+  - intent: fight
+    examples: |
+      - chose
+      - possède
+
+  - intent: potter
+    examples: |
+      - tuer
+      - expulser
+      - coucher
+
+  - intent: pulp
+    examples: |
+      - vite
+      - 10 minutes
+
+  - intent: bad
+    examples: |
+      - catégorie
+      - pistolet
+      - creuse
+
+  - intent: taxi
+    examples: |
+      - parle
+
+  - intent: black
+    examples: |
+      - différence
+      - classe
+
+  - intent: apocalyspe
+    examples: |
+      - odeur
+      - matin
+
+  - intent: back
+    examples: |
+      - réfléchir
+      - allo
+
+  - intent: element
+    examples: |
+      - dallas
+      - pass
+      - multi
+
+  - intent: silence
+    examples: |
+      - déguste
+      - beurre
+      - chianti
+      - foie
+
+  - intent: scarface
+    examples: |
+      - or
+      - merde
+
+  - intent: suspects
+    examples: |
+      - diable
+      - existe
+      - ruse
+
+  - intent: train
+    examples: |
+      - vitamine
+      - illégal

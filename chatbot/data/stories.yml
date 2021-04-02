@@ -1,0 +1,82 @@
+version: "2.0"
+
+stories:
+  - story: gump path
+    steps:
+      - intent: gump
+      - action: utter_gump
+
+  - story: poets path
+    steps:
+      - intent: poets
+      - action: utter_poets
+
+  - story: star path
+    steps:
+      - intent: star
+      - action: utter_star
+
+  - story: fight path
+    steps:
+      - intent: fight
+      - action: utter_fight
+
+  - story: potter path
+    steps:
+      - intent: potter
+      - action: utter_potter
+
+  - story: pulp path
+    steps:
+      - intent: pulp
+      - action: utter_pulp
+
+  - story: bad path
+    steps:
+      - intent: bad
+      - action: utter_bad
+
+  - story: taxi path
+    steps:
+      - intent: taxi
+      - action: utter_taxi
+
+  - story: black path
+    steps:
+      - intent: black
+      - action: utter_black
+
+  - story: apocalyspe path
+    steps:
+      - intent: apocalyspe
+      - action: utter_apocalyspe
+
+  - story: back path
+    steps:
+      - intent: back
+      - action: utter_back
+
+  - story: element path
+    steps:
+      - intent: element
+      - action: utter_element
+
+  - story: silence path
+    steps:
+      - intent: silence
+      - action: utter_silence
+
+  - story: scarface path
+    steps:
+      - intent: scarface
+      - action: utter_scarface
+
+  - story: suspects path
+    steps:
+      - intent: suspects
+      - action: utter_suspects
+
+  - story: train path
+    steps:
+      - intent: train
+      - action: utter_train
