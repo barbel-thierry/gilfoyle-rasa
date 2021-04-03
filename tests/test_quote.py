@@ -1,4 +1,5 @@
 import unittest
+
 from gilfoyle import quote
 
 
