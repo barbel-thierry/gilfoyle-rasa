@@ -47,7 +47,7 @@ responses:
   utter_future:
   - text: Allo McFly, y’a personne au bout du fil ! Faut réfléchir McFLy ! - Thomas F.Wilson, Retour vers le futur 2, (Robert Zemeckis)
   utter_element:
-  - text: Leilou Dallas, multipass. Muultiipaass. - Milla Jovovich, Le cinquième élément (Luc Besson)
+  - text: Leeloo Dallas, multipass. Muultiipaass. - Milla Jovovich, Le cinquième élément (Luc Besson)
   utter_silence:
   - text: J’ai dégusté son foie avec des fèves au beurre et un excellent Chianti. - Anthony Hopkins, Le silence des agneaux (Jonathan Demme)
   utter_scarface:
