@@ -1,5 +1,5 @@
 import unittest
-from gilfoyle import discord
+from gilfoyle import quote
 
 
 class Message:
@@ -8,18 +8,18 @@ class Message:
         self.author = author
 
 
-class TestDiscord(unittest.TestCase):
+class TestQuote(unittest.TestCase):
     def test_quote(self):
         self.assertEqual(
             'Leeloo Dallas, multipass. Muultiipaass. - Milla Jovovich, Le cinquième élément (Luc Besson)',
-            discord.on_message(
+            quote.response(
                 Message('Il faut que je retrouve mon pass', 'moi')
             )
         )
 
     def test_no_quote(self):
         self.assertIsNone(
-            discord.on_message(
+            quote.response(
                 Message("j'ai envie de manger un morceau", 'moi')
             )
         )
