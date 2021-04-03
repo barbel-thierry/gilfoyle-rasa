@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import patch
 
 from gilfoyle import quote
 
@@ -10,7 +11,12 @@ class Message:
 
 
 class TestQuote(unittest.TestCase):
-    def test_quote(self):
+    @patch('requests.post')
+    def test_quote(self, request):
+        request.return_value.json.return_value = [{
+            'text': 'Leeloo Dallas, multipass. Muultiipaass. - Milla Jovovich, Le cinquième élément (Luc Besson)'
+        }]
+
         self.assertEqual(
             'Leeloo Dallas, multipass. Muultiipaass. - Milla Jovovich, Le cinquième élément (Luc Besson)',
             quote.response(
@@ -18,7 +24,10 @@ class TestQuote(unittest.TestCase):
             )
         )
 
-    def test_no_quote(self):
+    @patch('requests.post')
+    def test_no_quote(self, request):
+        request.return_value.json.return_value = []
+
         self.assertIsNone(
             quote.response(
                 Message("j'ai envie de manger un morceau", 'moi')
