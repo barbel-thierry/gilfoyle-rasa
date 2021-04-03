@@ -7,7 +7,8 @@ def on_message(message):
         json={"sender": message.author, "message": message.content}
     )
 
-    return chatbot.json()[0]['text']
+    if len(chatbot.json()) > 0:
+        return chatbot.json()[0]['text']
 
 
 if __name__ == '__main__':

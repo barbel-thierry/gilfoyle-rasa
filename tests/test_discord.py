@@ -16,3 +16,10 @@ class TestDiscord(unittest.TestCase):
                 Message('Il faut que je retrouve mon pass', 'moi')
             )
         )
+
+    def test_no_quote(self):
+        self.assertIsNone(
+            discord.on_message(
+                Message("j'ai envie de manger un morceau", 'moi')
+            )
+        )

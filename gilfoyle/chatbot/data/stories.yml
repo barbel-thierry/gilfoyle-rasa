@@ -81,15 +81,15 @@ stories:
       - intent: train
       - action: utter_train
 
-- story: interactive_story_1
-  steps:
-  - action: utter_element
-  - intent: black
-  - action: utter_black
-  - intent: scarface
-  - action: utter_scarface
-  - intent: pulp
-    entities:
-    - text: 10 mn
-  - action: utter_pulp
-  - intent: stop
+  - story: interactive_story_1
+    steps:
+    - action: utter_element
+    - intent: black
+    - action: utter_black
+    - intent: scarface
+    - action: utter_scarface
+    - intent: pulp
+      entities:
+      - text: 10 mn
+    - action: utter_pulp
+    - intent: stop
