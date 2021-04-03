@@ -1,0 +1,8 @@
+language: fr
+
+pipeline:
+  - name: KeywordIntentClassifier
+  - name: FallbackClassifier
+    threshold: 0.7
+
+policies:

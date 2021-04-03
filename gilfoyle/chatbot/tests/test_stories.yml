@@ -310,33 +310,33 @@ stories:
         intent: apocalyspe
       - action: utter_apocalyspe
 
-  - story: back path 1
+  - story: future path 1
     steps:
       - user: |
           tu réfléchis des fois ?
-        intent: back
-      - action: utter_back
+        intent: future
+      - action: utter_future
 
-  - story: back path 2
+  - story: future path 2
     steps:
       - user: |
           le soleil va réfléchir sur la neige
-        intent: back
-      - action: utter_back
+        intent: future
+      - action: utter_future
 
-  - story: back path 3
+  - story: future path 3
     steps:
       - user: |
           allo, il y a quelqu'un ?
-        intent: back
-      - action: utter_back
+        intent: future
+      - action: utter_future
 
-  - story: back path 4
+  - story: future path 4
     steps:
       - user: |
           nan mais allo !
-        intent: back
-      - action: utter_back
+        intent: future
+      - action: utter_future
 
   - story: element path 1
     steps:

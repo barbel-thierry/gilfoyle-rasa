@@ -1,2 +1,8 @@
 venv
-chatbot/models/*
+gilfoyle/chatbot/models/*
+gilfoyle.egg-info
+.pytest_cache
+.coverage
+env
+*/__pycache__
+__pycache__

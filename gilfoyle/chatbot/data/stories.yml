@@ -51,10 +51,10 @@ stories:
       - intent: apocalyspe
       - action: utter_apocalyspe
 
-  - story: back path
+  - story: future path
     steps:
-      - intent: back
-      - action: utter_back
+      - intent: future
+      - action: utter_future
 
   - story: element path
     steps:
@@ -80,3 +80,16 @@ stories:
     steps:
       - intent: train
       - action: utter_train
+
+- story: interactive_story_1
+  steps:
+  - action: utter_element
+  - intent: black
+  - action: utter_black
+  - intent: scarface
+  - action: utter_scarface
+  - intent: pulp
+    entities:
+    - text: 10 mn
+  - action: utter_pulp
+  - intent: stop
