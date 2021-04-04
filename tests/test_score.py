@@ -1,3 +1,4 @@
+import random
 import unittest
 from unittest.mock import patch, mock_open
 
@@ -33,3 +34,16 @@ class TestScore(unittest.TestCase):
                 score.update({'Toto': 2})
 
         json.assert_called_once_with({'Riri': 0, 'Fifi': 0, 'Loulou': 0}, f)
+
+    def test_check_passes(self):
+        self.assertTrue(score.check(
+            Message(constants.GILFOYLE_ALIAS + ' ' + random.choice(constants.SCORE_WORDS), 'moi')
+        ))
+
+    def test_check_fails(self):
+        self.assertFalse(score.check(
+            Message(constants.GILFOYLE_ALIAS, 'moi')
+        ))
+        self.assertFalse(score.check(
+            Message(random.choice(constants.SCORE_WORDS), 'moi')
+        ))
