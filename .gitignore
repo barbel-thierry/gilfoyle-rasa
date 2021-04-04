@@ -3,6 +3,6 @@ gilfoyle/chatbot/models/*
 gilfoyle.egg-info
 .pytest_cache
 .coverage
-env
+.env
 */__pycache__
 __pycache__

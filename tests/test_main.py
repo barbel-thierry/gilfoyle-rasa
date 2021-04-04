@@ -20,6 +20,18 @@ class TestMain(unittest.TestCase):
 
         random.assert_called_once_with()
 
+    @patch('gilfoyle.game.play')
+    @patch('gilfoyle.game.check')
+    @patch('gilfoyle.random_values.check')
+    def test_game(self, random, check, game):
+        random.return_value = False
+        check.return_value = True
+        message = Message('', '')
+
+        main.on_message(message)
+
+        game.assert_called_once_with(message)
+
     @patch('gilfoyle.quote.response')
     @patch('gilfoyle.random_values.check')
     def test_quote(self, random, quote):
