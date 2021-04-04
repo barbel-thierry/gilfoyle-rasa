@@ -58,8 +58,8 @@ Rasa advises you to pick the `md` version of any [language](https://spacy.io/usa
 ### ⚙️ Pre-process
 * <dl>
   <dt>gilfoyle/chatbot/domain.yml</dt>
-  <dd>Where you define *intents* (ex: greeting, bye) and corresponding
-    *responses* (ex: utter_greeting, utter_bye)</dd>
+  <dd>Where you define <i>intents</i> (ex: greeting, bye) and corresponding
+    <i>responses</i> (ex: utter_greeting, utter_bye)</dd>
 </dl>
 
 * <dl>
