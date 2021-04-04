@@ -1,6 +1,7 @@
 fr-core-news-md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.0.0/fr_core_news_md-3.0.0-py3-none-any.whl
-pytest==6.2.2
+pytest==6.2.3
 pytest-cov==2.11.1
-rasa==2.4.0
+rasa==2.4.3
 requests==2.25.1
 spacy==3.0.5
+python-dotenv==0.17.0
