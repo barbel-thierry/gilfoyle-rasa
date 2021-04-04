@@ -3,22 +3,21 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- scarface
-- element
-- star
-- black
-- pulp
 - nlu_fallback
-- stop
 - gump
 - poets
+- star
 - fight
 - potter
+- pulp
 - bad
 - taxi
+- black
 - apocalyspe
 - future
+- element
 - silence
+- scarface
 - suspects
 - train
 entities:
@@ -57,20 +56,19 @@ responses:
   utter_train:
   - text: On se serait shooté à la vitamine C si cela avait été illégal... - Ewan McGregor, Trainspotting (Danny Boyle)
 actions:
-- utter_scarface
-- utter_element
-- utter_star
-- utter_black
-- utter_pulp
-- utter_stop
 - utter_gump
 - utter_poets
+- utter_star
 - utter_fight
 - utter_potter
+- utter_pulp
 - utter_bad
 - utter_taxi
+- utter_black
 - utter_apocalyspe
 - utter_future
+- utter_element
 - utter_silence
+- utter_scarface
 - utter_suspects
 - utter_train

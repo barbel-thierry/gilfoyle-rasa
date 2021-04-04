@@ -4,4 +4,4 @@ rules:
 - rule: Default behavior
   steps:
   - intent: nlu_fallback
-  - action:
+  - action: action_listen

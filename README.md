@@ -89,7 +89,7 @@ Rasa advises you to pick the `md` version of any [language](https://spacy.io/usa
 ```shell
 cd gilfoyle/chatbot
 rasa train
-rasa interactive # if you want to train it from the CLI
+rasa shell # if you want to test it from the CLI
 ```
 
 ### 💡 Start Gilfoyle

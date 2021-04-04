@@ -2,79 +2,78 @@ version: "2.0"
 nlu:
 - intent: gump
   examples: |
-    - chocolat
-    - tombe
-    - vie
+    - [chocolat](text)
+    - [tombe](text)
+    - [vie](text)
 - intent: poets
   examples: |
-    - mot
-    - idée
-    - monde
+    - [mot](text)
+    - [idée](text)
+    - [monde](text)
 - intent: star
   examples: |
-    - père
-    - cet aprem je vais voir mon père
+    - [père](text)
 - intent: fight
   examples: |
-    - chose
-    - possède
+    - [chose](text)
+    - [possède](text)
 - intent: potter
   examples: |
-    - tuer
-    - expulser
-    - coucher
+    - [tuer](text)
+    - [expulser](text)
+    - [coucher](text)
 - intent: pulp
   examples: |
-    - vite
-    - 10 minutes
-    - j'attends depuis [10 mn](text)
+    - [vite](text)
+    - [10 minutes](text)
+    - [10mn](text)
+    - [10 mn](text)
+    - [dix minutes](text)
+    - [dix mn](text)
 - intent: bad
   examples: |
-    - catégorie
-    - pistolet
-    - creuse
+    - [catégorie](text)
+    - [pistolet](text)
+    - [creuse](text)
 - intent: taxi
   examples: |
-    - parle
+    - [parle](text)
 - intent: black
   examples: |
-    - différence
-    - classe
-    - je retourne dans ma classe
+    - [différence](text)
+    - [classe](text)
 - intent: apocalyspe
   examples: |
-    - odeur
-    - matin
+    - [odeur](text)
+    - [matin](text)
 - intent: future
   examples: |
-    - réfléchir
-    - allo
+    - [réfléchir](text)
+    - [allo](text)
 - intent: element
   examples: |
-    - dallas
-    - pass
-    - multi
-    - c'est la classe à [dallas](text)
+    - [dallas](text)
+    - [pass](text)
+    - [multi](text)
 - intent: silence
   examples: |
-    - déguste
-    - beurre
-    - chianti
-    - foie
+    - [déguste](text)
+    - [beurre](text)
+    - [chianti](text)
+    - [foie](text)
 - intent: scarface
   examples: |
-    - or
-    - merde
-    - et merde
+    - [or](text)
+    - [merde](text)
 - intent: suspects
   examples: |
-    - diable
-    - existe
-    - ruse
+    - [diable](text)
+    - [existe](text)
+    - [ruse](text)
 - intent: train
   examples: |
-    - vitamine
-    - illégal
+    - [vitamine](text)
+    - [illégal](text)
 - intent: nlu_fallback
   examples: |
     - j'ai envie de manger un morceau
