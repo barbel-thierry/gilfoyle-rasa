@@ -11,17 +11,33 @@ class Message:
 
 class TestGame(unittest.TestCase):
     def test_initial_response(self):
+        launch_response = 'Toi. Toi.'
+
         self.assertEqual(
-            'Toi. Toi.',
+            launch_response,
             game.launch(
+                Message('Tu y vas, toi ?', 'moi')
+            )
+        )
+        self.assertEqual(
+            launch_response,
+            game.play(
                 Message('Tu y vas, toi ?', 'moi')
             )
         )
 
     def test_winning_answer(self):
+        match_response = 'Bravo, moi, tu as donné la bonne réponse !'
+
         self.assertEqual(
-            'Bravo, moi, tu as donné la bonne réponse !',
+            match_response,
             game.match(
+                Message('Mon toit.', 'moi')
+            )
+        )
+        self.assertEqual(
+            match_response,
+            game.play(
                 Message('Mon toit.', 'moi')
             )
         )
