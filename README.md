@@ -5,7 +5,7 @@
 
 #### powered by Rasa
 
-##❓What is this application for?
+## ❓What is this application for?
 
 The purpose is to provide a Discord bot that will react (or not) when
 specific words will be posted on your channel(s).
