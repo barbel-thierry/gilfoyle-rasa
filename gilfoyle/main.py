@@ -1,4 +1,4 @@
-from gilfoyle import quote, random_values, game, scapegoat
+from gilfoyle import scapegoat, random_values, game, score, quote
 
 
 def on_message(message):
@@ -8,5 +8,7 @@ def on_message(message):
         return random_values.global_result()
     elif game.check(message):
         return game.play(message)
+    elif score.check(message):
+        return score.display()
     else:
         return quote.response(message)

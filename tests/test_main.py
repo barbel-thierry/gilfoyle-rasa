@@ -24,7 +24,7 @@ class TestMain(unittest.TestCase):
     @patch('gilfoyle.random_values.check')
     @patch('gilfoyle.scapegoat.check')
     def test_random_values(self, scapegoat, check, random):
-        scapegoat.return_value= False
+        scapegoat.return_value = False
         check.return_value = True
 
         main.on_message(Message('', ''))
@@ -36,7 +36,7 @@ class TestMain(unittest.TestCase):
     @patch('gilfoyle.random_values.check')
     @patch('gilfoyle.scapegoat.check')
     def test_game(self, scapegoat, random, check, game):
-        scapegoat.return_value= False
+        scapegoat.return_value = False
         random.return_value = False
         check.return_value = True
         message = Message('', '')
@@ -45,14 +45,32 @@ class TestMain(unittest.TestCase):
 
         game.assert_called_once_with(message)
 
-    @patch('gilfoyle.quote.response')
+    @patch('gilfoyle.score.display')
+    @patch('gilfoyle.score.check')
     @patch('gilfoyle.game.check')
     @patch('gilfoyle.random_values.check')
     @patch('gilfoyle.scapegoat.check')
-    def test_quote(self, scapegoat, random, game, quote):
-        scapegoat.return_value= False
+    def test_score(self, scapegoat, random, game, check, score):
+        scapegoat.return_value = False
         random.return_value = False
         game.return_value = False
+        check.return_value = True
+        message = Message('', '')
+
+        main.on_message(message)
+
+        score.assert_called_once_with()
+
+    @patch('gilfoyle.quote.response')
+    @patch('gilfoyle.score.check')
+    @patch('gilfoyle.game.check')
+    @patch('gilfoyle.random_values.check')
+    @patch('gilfoyle.scapegoat.check')
+    def test_quote(self, scapegoat, random, game, score, quote):
+        scapegoat.return_value = False
+        random.return_value = False
+        game.return_value = False
+        score.return_value = False
         message = Message('', '')
 
         main.on_message(message)
