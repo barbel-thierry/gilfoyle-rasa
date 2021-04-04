@@ -1,8 +1,6 @@
 venv
 gilfoyle/chatbot/models/*
+gilfoyle/chatbot/story_graph.dot
 gilfoyle.egg-info
 .pytest_cache
-.coverage
 .env
-*/__pycache__
-__pycache__
