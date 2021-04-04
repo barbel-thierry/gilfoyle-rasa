@@ -11,7 +11,8 @@ GILFOYLE_ALIAS = "<@" + GILFOYLE_ID + ">"
 # Trigerring words to get random values
 RANDOM_WORDS = ['hasard', 'aléatoire', 'random']
 
-# Potential targets to get a scapgoat from
+# Trigerring words and potential scapegoats
+SCAPEGOAT_WORDS = ['maudit', 'réprouvé', 'souffre-douleur', 'victime']
 SCAPEGOAT_TARGETS = os.getenv('SCAPEGOAT_TARGETS', '').split(', ')
 
 # Triggers for the game

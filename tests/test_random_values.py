@@ -1,3 +1,4 @@
+import random
 import unittest
 from unittest.mock import patch
 
@@ -82,7 +83,7 @@ class TestRandomValues(unittest.TestCase):
 
     def test_check_passes(self):
         self.assertTrue(random_values.check(
-            Message(constants.GILFOYLE_ALIAS + ' hasard', 'moi')
+            Message(constants.GILFOYLE_ALIAS + ' ' + random.choice(constants.RANDOM_WORDS), 'moi')
         ))
 
     def test_check_fails(self):
@@ -90,5 +91,5 @@ class TestRandomValues(unittest.TestCase):
             Message(constants.GILFOYLE_ALIAS, 'moi')
         ))
         self.assertFalse(random_values.check(
-            Message('hasard', 'moi')
+            Message(random.choice(constants.RANDOM_WORDS), 'moi')
         ))
