@@ -31,6 +31,6 @@ def update(entries):
 
 def check(message):
     gilfoyle = constants.GILFOYLE_ID in message.content
-    word = any(keyword in message.content for keyword in constants.SCORE_WORDS)
+    word = any(keyword in str(message.content).lower() for keyword in constants.SCORE_WORDS)
 
     return gilfoyle and word

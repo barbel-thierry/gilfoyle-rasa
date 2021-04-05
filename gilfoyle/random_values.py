@@ -46,6 +46,6 @@ def global_result():
 
 def check(message):
     gilfoyle = constants.GILFOYLE_ID in message.content
-    word = any(keyword in message.content for keyword in constants.RANDOM_WORDS)
+    word = any(keyword in str(message.content).lower() for keyword in constants.RANDOM_WORDS)
 
     return gilfoyle and word
