@@ -57,29 +57,29 @@ Rasa advises you to pick the `md` version of any [language](https://spacy.io/usa
 
 ### ⚙️ Pre-process
 * <dl>
-  <dt>gilfoyle/chatbot/domain.yml</dt>
+  <dt>chatbot/domain.yml</dt>
   <dd>Where you define <i>intents</i> (ex: greeting, bye) and corresponding
     <i>responses</i> (ex: utter_greeting, utter_bye)</dd>
 </dl>
 
 * <dl>
-  <dt>gilfoyle/chatbot/data/nlu.yml</dt>
+  <dt>chatbot/data/nlu.yml</dt>
   <dd>Where you define what words could trigger each intent of yours</dd>
 </dl>
 
 * <dl>
-  <dt>gilfoyle/chatbot/data/stories.yml</dt>
+  <dt>chatbot/data/stories.yml</dt>
   <dd>Where you describe the basic behavior of your chatbot</dd>
 </dl>
 
 * <dl>
-  <dt>gilfoyle/chatbot/tests/test_stories.yml</dt>
+  <dt>chatbot/tests/test_stories.yml</dt>
   <dd>Where you set as many story examples as you want to make your
     chatbot more accurate</dd>
 </dl>
 
 * <dl>
-  <dt>gilfoyle/chatbot/data/rules.yml</dt>
+  <dt>chatbot/data/rules.yml</dt>
   <dd>Where you set the default action to perform when no other action
     is chosen</dd>
 </dl>
@@ -87,7 +87,7 @@ Rasa advises you to pick the `md` version of any [language](https://spacy.io/usa
 ### 💪 Train your model
 
 ```shell
-cd gilfoyle/chatbot
+cd chatbot
 rasa train
 rasa shell # if you want to test it from the CLI
 ```
@@ -95,6 +95,22 @@ rasa shell # if you want to test it from the CLI
 ### 💡 Start Gilfoyle
 
 ```shell
+docker-compose up --build -d
+# or
 docker-compose up -d
-# rasa run -m gilfoyle/chatbot/models --enable-api
+```
+
+If you want to test your chatbot locally:
+
+```shell
+docker exec -it gilfoyle /bin/bash
+apt install curl
+curl localhost:5055/webhooks/rest/webhook -d '{"sender": "me", "message": "dallas"}'
+```
+
+### ✨ Tips
+
+```python
+# anonymous object
+type('anonymous_class_name', (object,), {'property_name':'property_value'})
 ```

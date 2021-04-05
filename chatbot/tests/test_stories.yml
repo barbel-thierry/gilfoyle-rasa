@@ -1,0 +1,532 @@
+stories:
+  - story: gump path 1
+    steps:
+      - user: |
+          c'est la vie
+        intent: gump
+      - action: utter_gump
+
+  - story: gump path 2
+    steps:
+      - user: |
+          j'aime ma vie
+        intent: gump
+      - action: utter_gump
+
+  - story: gump path 3
+    steps:
+      - user: |
+          j'aime le chocolat
+        intent: gump
+      - action: utter_gump
+
+  - story: gump path 4
+    steps:
+      - user: |
+          je peux avoir du chocolat ?
+        intent: gump
+      - action: utter_gump
+
+  - story: gump path 5
+    steps:
+      - user: |
+          je suis tombé dans la rue
+        intent: gump
+      - action: utter_gump
+
+  - story: gump path 6
+    steps:
+      - user: |
+          la pluie tombe doucement
+        intent: gump
+      - action: utter_gump
+
+  - story: poets path 1
+    steps:
+      - user: |
+          ces mots font mal
+        intent: poets
+      - action: utter_poets
+
+  - story: poets path 2
+    steps:
+      - user: |
+          le mot de la fin
+        intent: poets
+      - action: utter_poets
+
+  - story: poets path 3
+    steps:
+      - user: |
+          j'ai une idée
+        intent: poets
+      - action: utter_poets
+
+  - story: poets path 4
+    steps:
+      - user: |
+          les idées fusent
+        intent: poets
+      - action: utter_poets
+
+  - story: poets path 5
+    steps:
+      - user: |
+          le monde tourne
+        intent: poets
+      - action: utter_poets
+
+  - story: poets path 6
+    steps:
+      - user: |
+          je suis seul au monde
+        intent: poets
+      - action: utter_poets
+
+  - story: star path 1
+    steps:
+      - user: |
+          il faut que j'apelle mon père
+        intent: star
+      - action: utter_star
+
+  - story: star path 2
+    steps:
+      - user: |
+          mon père est venu me chercher
+        intent: star
+      - action: utter_star
+
+  - story: fight path 1
+    steps:
+      - user: |
+          je dois faire quelque chose
+        intent: fight
+      - action: utter_fight
+
+  - story: fight path 2
+    steps:
+      - user: |
+          une chose est sûre
+        intent: fight
+      - action: utter_fight
+
+  - story: fight path 3
+    steps:
+      - user: |
+          je veux posséder un ordinateur
+        intent: fight
+      - action: utter_fight
+
+  - story: fight path 4
+    steps:
+      - user: |
+          il possède toutes les cartes
+        intent: fight
+      - action: utter_fight
+
+  - story: potter path 1
+    steps:
+      - user: |
+          on va se faire tuer
+        intent: potter
+      - action: utter_potter
+
+  - story: potter path 2
+    steps:
+      - user: |
+          j'ai envie de te tuer
+        intent: potter
+      - action: utter_potter
+
+  - story: potter path 3
+    steps:
+      - user: |
+          ils se sont fait expulser
+        intent: potter
+      - action: utter_potter
+
+  - story: potter path 4
+    steps:
+      - user: |
+          il risque l'expulsion
+        intent: potter
+      - action: utter_potter
+
+  - story: potter path 5
+    steps:
+      - user: |
+          je vais me coucher
+        intent: potter
+      - action: utter_potter
+
+  - story: potter path 6
+    steps:
+      - user: |
+          les arbres sont couchés
+        intent: potter
+      - action: utter_potter
+
+  - story: pulp path 1
+    steps:
+      - user: |
+          il faut faire vite
+        intent: pulp
+      - action: utter_pulp
+
+  - story: pulp path 2
+    steps:
+      - user: |
+          je vais vite aller régler ça
+        intent: pulp
+      - action: utter_pulp
+
+  - story: pulp path 3
+    steps:
+      - user: |
+          j'arrive dans 10 minutes
+        intent: pulp
+      - action: utter_pulp
+
+  - story: pulp path 1
+    steps:
+      - user: |
+          il y a 10mn
+        intent: pulp
+      - action: utter_pulp
+
+  - story: bad path 1
+    steps:
+      - user: |
+          on fait partie de la même catégorie
+        intent: bad
+      - action: utter_bad
+
+  - story: bad path 2
+    steps:
+      - user: |
+          il y a plusieurs catégories
+        intent: bad
+      - action: utter_bad
+
+  - story: bad path 3
+    steps:
+      - user: |
+          donne moi ton pistolet
+        intent: bad
+      - action: utter_bad
+
+  - story: bad path 4
+    steps:
+      - user: |
+          il a le pistolet sur la tempe
+        intent: bad
+      - action: utter_bad
+
+  - story: bad path 5
+    steps:
+      - user: |
+          tu as creusé ta tombe
+        intent: bad
+      - action: utter_bad
+
+  - story: bad path 6
+    steps:
+      - user: |
+          arrête de te creuser la tête
+        intent: bad
+      - action: utter_bad
+
+  - story: taxi path 1
+    steps:
+      - user: |
+          tu veux parler ?
+        intent: taxi
+      - action: utter_taxi
+
+  - story: taxi path 2
+    steps:
+      - user: |
+          à qui tu parles ?
+        intent: taxi
+      - action: utter_taxi
+
+  - story: black path 1
+    steps:
+      - user: |
+          il n'y a aucune différence
+        intent: black
+      - action: utter_black
+
+  - story: black path 2
+    steps:
+      - user: |
+          c'est complètement différent
+        intent: black
+      - action: utter_black
+
+  - story: black path 3
+    steps:
+      - user: |
+          elle a la classe
+        intent: black
+      - action: utter_black
+
+  - story: black path 4
+    steps:
+      - user: |
+          la classe est finie
+        intent: black
+      - action: utter_black
+
+  - story: apocalyspe path 1
+    steps:
+      - user: |
+          tu ne sens pas une odeur ?
+        intent: apocalyspe
+      - action: utter_apocalyspe
+
+  - story: apocalyspe path 2
+    steps:
+      - user: |
+          c'est l'odeur de la mort
+        intent: apocalyspe
+      - action: utter_apocalyspe
+
+  - story: apocalyspe path 3
+    steps:
+      - user: |
+          il déjeune rien le matin ?
+        intent: apocalyspe
+      - action: utter_apocalyspe
+
+  - story: apocalyspe path 4
+    steps:
+      - user: |
+          il fait beau ce matin
+        intent: apocalyspe
+      - action: utter_apocalyspe
+
+  - story: future path 1
+    steps:
+      - user: |
+          tu réfléchis des fois ?
+        intent: future
+      - action: utter_future
+
+  - story: future path 2
+    steps:
+      - user: |
+          le soleil va réfléchir sur la neige
+        intent: future
+      - action: utter_future
+
+  - story: future path 3
+    steps:
+      - user: |
+          allo, il y a quelqu'un ?
+        intent: future
+      - action: utter_future
+
+  - story: future path 4
+    steps:
+      - user: |
+          nan mais allo !
+        intent: future
+      - action: utter_future
+
+  - story: element path 1
+    steps:
+      - user: |
+          je vais passer les vacances à dallas
+        intent: element
+      - action: utter_element
+
+  - story: element path 2
+    steps:
+      - user: |
+          c'est la classe à dallas !
+        intent: element
+      - action: utter_element
+
+  - story: element path 3
+    steps:
+      - user: |
+          t'as pris ton pass ?
+        intent: element
+      - action: utter_element
+
+  - story: element path 4
+    steps:
+      - user: |
+          je ne retrouve plus mon pass
+        intent: element
+      - action: utter_element
+
+  - story: element path 5
+    steps:
+      - user: |
+          ils ont joué en multi
+        intent: element
+      - action: utter_element
+
+  - story: element path 5
+    steps:
+      - user: |
+          elle est multi fonctions
+        intent: element
+      - action: utter_element
+
+  - story: silence path 1
+    steps:
+      - user: |
+          je vais prendre mon temps et déguster
+        intent: silence
+      - action: utter_silence
+
+  - story: silence path 2
+    steps:
+      - user: |
+          cette fois, je déguste !
+        intent: silence
+      - action: utter_silence
+
+  - story: silence path 3
+    steps:
+      - user: |
+          tu veux du beurre ?
+        intent: silence
+      - action: utter_silence
+
+  - story: silence path 4
+    steps:
+      - user: |
+          tu ne peux pas avoir le beurre et l'argent du beurre
+        intent: silence
+      - action: utter_silence
+
+  - story: silence path 5
+    steps:
+      - user: |
+          un peu de chianti ?
+        intent: silence
+      - action: utter_silence
+
+  - story: silence path 6
+    steps:
+      - user: |
+          on va ouvrir une bouteille de chianti pour fêter ça
+        intent: silence
+      - action: utter_silence
+
+  - story: silence path 7
+    steps:
+      - user: |
+          j'ai mal au foie
+        intent: silence
+      - action: utter_silence
+
+  - story: silence path 8
+    steps:
+      - user: |
+          le chocolat donne mal au foie
+        intent: silence
+      - action: utter_silence
+
+  - story: scarface path 1
+    steps:
+      - user: |
+          c'est une occasion en or
+        intent: scarface
+      - action: utter_scarface
+
+  - story: scarface path 2
+    steps:
+      - user: |
+          l'or est une valeur sûre
+        intent: scarface
+      - action: utter_scarface
+
+  - story: scarface path 3
+    steps:
+      - user: |
+          c'est la merde !
+        intent: scarface
+      - action: utter_scarface
+
+  - story: scarface path 4
+    steps:
+      - user: |
+          il est dans la merde jusqu'au cou
+        intent: scarface
+      - action: utter_scarface
+
+  - story: suspects path 1
+    steps:
+      - user: |
+          c'est le diable incarné
+        intent: suspects
+      - action: utter_suspects
+
+  - story: suspects path 2
+    steps:
+      - user: |
+          il a le diable au corps
+        intent: suspects
+      - action: utter_suspects
+
+  - story: suspects path 3
+    steps:
+      - user: |
+          ça n'existe pas
+        intent: suspects
+      - action: utter_suspects
+
+  - story: suspects path 4
+    steps:
+      - user: |
+          le feu existe depuis très longtemps
+        intent: suspects
+      - action: utter_suspects
+
+  - story: suspects path 5
+    steps:
+      - user: |
+          c'est une vieille ruse
+        intent: suspects
+      - action: utter_suspects
+
+  - story: suspects path 6
+    steps:
+      - user: |
+          il est rusé comme un renard
+        intent: suspects
+      - action: utter_suspects
+
+  - story: train path 1
+    steps:
+      - user: |
+          j'ai besoin de vitamines
+        intent: train
+      - action: utter_train
+
+  - story: train path 2
+    steps:
+      - user: |
+          il y a beaucoup de vitamines dans les fruits
+        intent: train
+      - action: utter_train
+
+  - story: train path 3
+    steps:
+      - user: |
+          c'est parfaitement illégal !
+        intent: train
+      - action: utter_train
+
+  - story: train path 4
+    steps:
+      - user: |
+          illégal ou pas, j'y vais
+        intent: train
+      - action: utter_train

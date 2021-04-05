@@ -1,0 +1,79 @@
+version: "2.0"
+nlu:
+- intent: gump
+  examples: |
+    - [chocolat](text)
+    - [tombe](text)
+    - [vie](text)
+- intent: poets
+  examples: |
+    - [mot](text)
+    - [idée](text)
+    - [monde](text)
+- intent: star
+  examples: |
+    - [père](text)
+- intent: fight
+  examples: |
+    - [chose](text)
+    - [possède](text)
+- intent: potter
+  examples: |
+    - [tuer](text)
+    - [expulser](text)
+    - [coucher](text)
+- intent: pulp
+  examples: |
+    - [vite](text)
+    - [10 minutes](text)
+    - [10mn](text)
+    - [10 mn](text)
+    - [dix minutes](text)
+    - [dix mn](text)
+- intent: bad
+  examples: |
+    - [catégorie](text)
+    - [pistolet](text)
+    - [creuse](text)
+- intent: taxi
+  examples: |
+    - [parle](text)
+- intent: black
+  examples: |
+    - [différence](text)
+    - [classe](text)
+- intent: apocalyspe
+  examples: |
+    - [odeur](text)
+    - [matin](text)
+- intent: future
+  examples: |
+    - [réfléchir](text)
+    - [allo](text)
+- intent: element
+  examples: |
+    - [dallas](text)
+    - [pass](text)
+    - [multi](text)
+- intent: silence
+  examples: |
+    - [déguste](text)
+    - [beurre](text)
+    - [chianti](text)
+    - [foie](text)
+- intent: scarface
+  examples: |
+    - [or](text)
+    - [merde](text)
+- intent: suspects
+  examples: |
+    - [diable](text)
+    - [existe](text)
+    - [ruse](text)
+- intent: train
+  examples: |
+    - [vitamine](text)
+    - [illégal](text)
+- intent: nlu_fallback
+  examples: |
+    - j'ai envie de manger un morceau
