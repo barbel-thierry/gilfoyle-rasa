@@ -2,6 +2,7 @@ import os
 
 
 def pytest_configure(config):
+    os.environ['DISCORD_TOKEN'] = 'discord_token'
     os.environ['GILFOYLE_ID'] = 'gilfoyle'
 
     os.environ['SCAPEGOAT_WORDS'] = 'maudit, réprouvé, victime'

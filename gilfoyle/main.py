@@ -21,23 +21,24 @@ async def on_message(message):
 
     if scapegoat.check(message):
         log_for('scapegoat', message)
-        await scapegoat.pick()
+        return scapegoat.pick()
     elif random_values.check(message):
         log_for('random_values', message)
-        await random_values.global_result()
+        return random_values.global_result()
     elif game.check(message):
         log_for('game', message)
-        await game.play(message)
+        return game.play(message)
     elif score.check(message):
         log_for('score', message)
-        await score.display()
+        return score.display()
     else:
         log_for('quote', message)
-        await quote.response(message)
+        return quote.response(message)
 
 
 def log_for(reagent, message):
     logging.info('[%s][%s] %s', message.author, reagent, message.content)
 
 
-client.run(TOKEN)
+if __name__ == '__main__':
+    client.run(TOKEN)
