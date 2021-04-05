@@ -6,18 +6,33 @@ from gilfoyle import constants
 
 
 def display():
+    overhaul()
+
     with open(os.path.join(sys.path[0], 'score.json')) as file:
         values = json.load(file)
 
-        if len(values.items()) != len(constants.SCAPEGOAT_TARGETS):
-            update(values)
-
-        return '\n'.join(
-            [str(name).capitalize() + ' : ' + str(score) + ' pt(s)' for name, score in values.items()]
-        )
+    return '\n'.join(
+        [str(name).capitalize() + ' : ' + str(score) + ' pt(s)' for name, score in values.items()]
+    )
 
 
-def update(entries):
+def increment(player):
+    overhaul()
+
+    with open(os.path.join(sys.path[0], 'score.json')) as file:
+        values = json.load(file)
+        values[player] = values[player] + 1
+
+    with open(os.path.join(sys.path[0], 'score.json'), 'w') as outfile:
+        json.dump(values, outfile)
+
+    return values[player]
+
+
+def overhaul():
+    with open(os.path.join(sys.path[0], 'score.json')) as file:
+        entries = json.load(file)
+
     for player in constants.SCAPEGOAT_TARGETS:
         if player not in entries:
             entries[player] = 0

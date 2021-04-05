@@ -19,19 +19,19 @@ class TestScore(unittest.TestCase):
                 score.display()
             )
 
-    @patch('gilfoyle.score.update')
-    def test_update_before_displaying(self, update):
+    @patch('gilfoyle.score.overhaul')
+    def test_update_before_displaying(self, overhaul):
         with patch('builtins.open', mock_open(read_data='{}')) as file:
             with open(file):
                 score.display()
 
-        update.assert_called_once_with({})
+        overhaul.assert_called_once_with()
 
     @patch('json.dump')
-    def test_update(self, json):
-        with patch('builtins.open', mock_open()):
+    def test_overhaul(self, json):
+        with patch('builtins.open', mock_open(read_data='{}')):
             with open('./score.json', 'w') as f:
-                score.update({'Toto': 2})
+                score.overhaul()
 
         json.assert_called_once_with({'Riri': 0, 'Fifi': 0, 'Loulou': 0}, f)
 

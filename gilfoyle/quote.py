@@ -8,4 +8,4 @@ def response(message):
     )
 
     if len(chatbot.json()) > 0:
-        return chatbot.json()[0]['text']
+        return "```yaml\n" + chatbot.json()[0]['text'] + "\n```"

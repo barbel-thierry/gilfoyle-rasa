@@ -15,24 +15,31 @@ specific words will be posted on your channel(s).
 Gilfoyle will check for the first action filling requirements
 (**in that very order**):
 
-1.  Announce a random scapegoat according to the `SCAPEGOAT_TARGETS` list
-    provided
+1.  Is it a scapegoat request?
+    > Ex: <u>`@Gilfoyle`</u> qui est <u>maudit</u> ?<br>
+    Gilfoyle will announce a random name from `SCAPEGOAT_TARGETS`
     
 
-2.  Announce random values (number, letter, true/false, yes/no,
-    heads/tails, direction, chifoumi)
+2.  Is it a request to get random values?
+    > Ex: <u>`@Gilfoyle`</u> donne moi des valeurs au <u>hasard</u><br> 
+    Gilfoyle will announce random *number*, *letter*, *true*/*false*, *yes*/*no*,
+    *heads*/*tails*, *direction*, *chifoumi*
     
 
-3.  Announce a game launch / a victory (the `GAME_TRIGGER` has been posted,
-    Gilfoyle will help you with the `GAME_RESPONSE` for you to be the first
-    posting the `GAME_WINNING_ANSWER`)
+3.  Is it a game request?
+    > Gilfoyle will announce a game launch / a victory (the `GAME_TRIGGER` has
+    been posted, Gilfoyle will help you with the `GAME_RESPONSE` for you to be
+    the first posting the `GAME_WINNING_ANSWER`)
     
 
-4.  Announce the current score board according to the `SCAPEGOAT_TARGETS` list
-    provided and the game results
+4.  Is it a score request?
+    > Ex: <u>`@Gilfoyle`</u> quel est le <u>score</u> ?<br>
+    Gilfoyle will announce the current score board according to the
+    `SCAPEGOAT_TARGETS` list provided and the game results
     
 
-5.  Announce a film quote linked with the previous posted message
+5.  Is a word matching any NLU intent?
+    > Gilfoyle will announce a quote linked with the previous posted message
 
 ## 💾 Installation
 
@@ -91,6 +98,10 @@ cd chatbot
 rasa train
 rasa shell # if you want to test it from the CLI
 ```
+
+### 🦾 Create your bot application on Discord
+
+Follow these [steps](https://discordpy.readthedocs.io/en/latest/discord.html)
 
 ### 💡 Start Gilfoyle
 
