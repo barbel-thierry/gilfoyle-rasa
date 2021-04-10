@@ -35,6 +35,14 @@ class TestScore(unittest.TestCase):
 
         json.assert_called_once_with({'You': 0, 'Me': 0, 'She': 0}, f)
 
+    @patch('json.dump')
+    def test_non_players_are_deleted(self, json):
+        with patch('builtins.open', mock_open(read_data='{"He": 38}')):
+            with open('./score.json', 'w') as f:
+                score.overhaul()
+
+        json.assert_called_once_with({'You': 0, 'Me': 0, 'She': 0}, f)
+
     def test_check_passes(self):
         self.assertTrue(score.check(
             Message(constants.GILFOYLE_ALIAS + ' ' + random.choice(constants.SCORE_WORDS), 'Me')

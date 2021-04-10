@@ -4,5 +4,6 @@ chatbot/story_graph.dot
 chatbot/results/*
 gilfoyle.egg-info
 .pytest_cache
+htmlcov
 .env
 .coverage
