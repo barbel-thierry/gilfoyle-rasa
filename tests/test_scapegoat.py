@@ -16,13 +16,13 @@ class TestScapegoat(unittest.TestCase):
 
     def test_check_passes(self):
         self.assertTrue(scapegoat.check(
-            Message(constants.GILFOYLE_ALIAS + ' ' + random.choice(constants.SCAPEGOAT_WORDS), 'moi')
+            Message(constants.GILFOYLE_ALIAS + ' ' + random.choice(constants.SCAPEGOAT_WORDS), 'Me')
         ))
 
     def test_check_fails(self):
         self.assertFalse(scapegoat.check(
-            Message(constants.GILFOYLE_ALIAS, 'moi')
+            Message(constants.GILFOYLE_ALIAS, 'Me')
         ))
         self.assertFalse(scapegoat.check(
-            Message(random.choice(constants.SCAPEGOAT_WORDS), 'moi')
+            Message(random.choice(constants.SCAPEGOAT_WORDS), 'Me')
         ))

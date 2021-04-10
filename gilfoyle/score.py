@@ -12,7 +12,7 @@ def display():
         values = json.load(file)
 
     return '\n'.join(
-        [str(name).capitalize() + ' : ' + str(score) + ' pt(s)' for name, score in values.items()]
+        [str(name).capitalize() + ': ' + str(score) + ' pt(s)' for name, score in values.items()]
     )
 
 
@@ -35,7 +35,7 @@ def overhaul():
 
     for player in constants.SCAPEGOAT_TARGETS:
         if player not in entries:
-            entries[player] = 0
+            entries[str(player).capitalize()] = 0
 
     for key in [key for key in entries if key not in constants.SCAPEGOAT_TARGETS]:
         del entries[key]

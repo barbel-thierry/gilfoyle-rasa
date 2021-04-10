@@ -15,7 +15,7 @@ def match(message):
         new_value = score.increment(message.author)
         del os.environ['GAME']
 
-        return 'Bravo, ' + str(message.author) + ', tu as désormais ' + str(new_value) + ' pt(s) !'
+        return 'Well done, ' + str(message.author) + ', your score is now ' + str(new_value) + '!'
 
 
 def play(message):

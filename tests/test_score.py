@@ -13,9 +13,9 @@ class Message:
 
 class TestScore(unittest.TestCase):
     def test_display(self):
-        with patch('builtins.open', mock_open(read_data='{"riri": 5, "fifi": 0, "loulou": -3}')):
+        with patch('builtins.open', mock_open(read_data='{"You": 5, "Me": 0, "She": -3}')):
             self.assertEqual(
-                'Riri : 5 pt(s)\nFifi : 0 pt(s)\nLoulou : -3 pt(s)',
+                'You: 5 pt(s)\nMe: 0 pt(s)\nShe: -3 pt(s)',
                 score.display()
             )
 
@@ -33,17 +33,17 @@ class TestScore(unittest.TestCase):
             with open('./score.json', 'w') as f:
                 score.overhaul()
 
-        json.assert_called_once_with({'Riri': 0, 'Fifi': 0, 'Loulou': 0}, f)
+        json.assert_called_once_with({'You': 0, 'Me': 0, 'She': 0}, f)
 
     def test_check_passes(self):
         self.assertTrue(score.check(
-            Message(constants.GILFOYLE_ALIAS + ' ' + random.choice(constants.SCORE_WORDS), 'moi')
+            Message(constants.GILFOYLE_ALIAS + ' ' + random.choice(constants.SCORE_WORDS), 'Me')
         ))
 
     def test_check_fails(self):
         self.assertFalse(score.check(
-            Message(constants.GILFOYLE_ALIAS, 'moi')
+            Message(constants.GILFOYLE_ALIAS, 'Me')
         ))
         self.assertFalse(score.check(
-            Message(random.choice(constants.SCORE_WORDS), 'moi')
+            Message(random.choice(constants.SCORE_WORDS), 'Me')
         ))

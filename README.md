@@ -6,21 +6,21 @@
 #### powered by Rasa
 
 * [What is this application for?](https://github.com/barbel-thierry/gilfoyle-rasa#what-is-this-application-for)
-    1. [Check order](https://github.com/barbel-thierry/gilfoyle-rasa#-check-order)
+* [Check order](https://github.com/barbel-thierry/gilfoyle-rasa#-check-order)
 * [Installation](https://github.com/barbel-thierry/gilfoyle-rasa#-installation)
     1. [Get the code](https://github.com/barbel-thierry/gilfoyle-rasa#-get-the-code)
     2. [Pre-process](https://github.com/barbel-thierry/gilfoyle-rasa#%EF%B8%8F-pre-process)
     3. [Start Gilfoyle](https://github.com/barbel-thierry/gilfoyle-rasa#-start-gilfoyle)
     4. [Create your bot application on Discord](https://github.com/barbel-thierry/gilfoyle-rasa#-create-your-bot-application-on-discord)
     5. [Train your model](https://github.com/barbel-thierry/gilfoyle-rasa#-train-your-model)
-    6. [Tips](https://github.com/barbel-thierry/gilfoyle-rasa#-tips)
+* [Tips](https://github.com/barbel-thierry/gilfoyle-rasa#-tips)
 
 ## ❓What is this application for?
 
 The purpose is to provide a Discord bot that will react (or not) on
 specific words being posted on your channel(s).
 
-### ✅ Check order
+## ✅ Check order
 
 Gilfoyle will check for the first action filling requirements
 (**in that very order**):
@@ -69,7 +69,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # if you want to use any other language than english
-python -m spacy download fr-core-news-md
+python -m spacy download en_core_web_md
 ```
 
 Rasa advises to pick the `md` version of any [language](https://spacy.io/usage/models#languages)
@@ -103,12 +103,14 @@ Rasa advises to pick the `md` version of any [language](https://spacy.io/usage/m
     is chosen</dd>
 </dl>
 
+You can read more on [stories](https://rasa.com/docs/rasa/stories/).
+
 ### 💪 Train your model
 
 ```shell
 cd chatbot
 rasa train
-rasa shell # if you want to test it from the CLI
+rasa shell # if you want to test it from the CLI and generate some more test stories
 ```
 
 ### 🦾 Create your bot application on Discord
@@ -131,7 +133,7 @@ apt install curl
 curl localhost:5055/webhooks/rest/webhook -d '{"sender": "me", "message": "dallas"}'
 ```
 
-### ✨ Tips
+## ✨ Tips
 
 ```python
 # anonymous object

@@ -1,6 +1,7 @@
 venv
-gilfoyle/chatbot/models/*
-gilfoyle/chatbot/story_graph.dot
+chatbot/models/*
+chatbot/story_graph.dot
+chatbot/results/*
 gilfoyle.egg-info
 .pytest_cache
 .env

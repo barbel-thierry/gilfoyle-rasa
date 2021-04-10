@@ -13,34 +13,34 @@ def letter():
 
 
 def boolean():
-    return random.choice(['Vrai', 'Faux'])
+    return random.choice(['True', 'False'])
 
 
 def answer():
-    return random.choice(['Oui', 'Non'])
+    return random.choice(['Yes', 'No'])
 
 
 def heads_or_tails():
-    return random.choice(['Pile', 'Face'])
+    return random.choice(['Heads', 'Tails'])
 
 
 def direction():
-    return random.choice(['Droite', 'Gauche'])
+    return random.choice(['Right', 'Left'])
 
 
-def chifoumi():
-    return random.choice(['Pierre', 'Feuille', 'Ciseaux'])
+def chifumi():
+    return random.choice(['Rock', 'Paper', 'Scissors'])
 
 
 def global_result():
     return (
-            'Chiffre : ' + str(number()) + '\n'
-            + 'Lettre : ' + str(letter()) + '\n'
-            + 'Vrai/Faux : ' + str(boolean()) + '\n'
-            + 'Oui/Non : ' + str(answer()) + '\n'
-            + 'Pile/Face : ' + str(heads_or_tails()) + '\n'
+            'Number : ' + str(number()) + '\n'
+            + 'Letter : ' + str(letter()) + '\n'
+            + 'True/False : ' + str(boolean()) + '\n'
+            + 'Yes/No : ' + str(answer()) + '\n'
+            + 'Heads/Tails : ' + str(heads_or_tails()) + '\n'
             + 'Direction : ' + str(direction()) + '\n'
-            + 'Chifoumi : ' + str(chifoumi())
+            + 'Chifumi : ' + str(chifumi())
     )
 
 

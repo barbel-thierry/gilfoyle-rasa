@@ -20,7 +20,7 @@ class TestQuote(unittest.TestCase):
         self.assertEqual(
             '```yaml\nLeeloo Dallas, multipass. Muultiipaass. - Milla Jovovich, Le cinquième élément (Luc Besson)\n```',
             quote.response(
-                Message('Il faut que je retrouve mon pass', 'moi')
+                Message('Il faut que je retrouve mon pass', 'Me')
             )
         )
 
@@ -30,6 +30,6 @@ class TestQuote(unittest.TestCase):
 
         self.assertIsNone(
             quote.response(
-                Message("j'ai envie de manger un morceau", 'moi')
+                Message("I'm so hungry", 'Me')
             )
         )

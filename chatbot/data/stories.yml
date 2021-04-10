@@ -1,82 +1,77 @@
 version: "2.0"
 
 stories:
-  - story: gump path
+  - story: lotr path
     steps:
-      - intent: gump
-      - action: utter_gump
+      - intent: lotr
+      - action: utter_lotr
 
-  - story: poets path
+  - story: eternal path
     steps:
-      - intent: poets
-      - action: utter_poets
+      - intent: eternal
+      - action: utter_eternal
 
-  - story: star path
+  - story: darko path
     steps:
-      - intent: star
-      - action: utter_star
+      - intent: darko
+      - action: utter_darko
 
-  - story: fight path
+  - story: spider path
     steps:
-      - intent: fight
-      - action: utter_fight
+      - intent: spider
+      - action: utter_spider
+
+  - story: amelie path
+    steps:
+      - intent: amelie
+      - action: utter_amelie
+
+  - story: django path
+    steps:
+      - intent: django
+      - action: utter_django
+
+  - story: nemo path
+    steps:
+      - intent: nemo
+      - action: utter_nemo
 
   - story: potter path
     steps:
       - intent: potter
       - action: utter_potter
 
-  - story: pulp path
+  - story: bill path
     steps:
-      - intent: pulp
-      - action: utter_pulp
+      - intent: bill
+      - action: utter_bill
 
-  - story: bad path
+  - story: sparta path
     steps:
-      - intent: bad
-      - action: utter_bad
+      - intent: sparta
+      - action: utter_sparta
 
-  - story: taxi path
+  - story: break path
     steps:
-      - intent: taxi
-      - action: utter_taxi
+      - intent: break
+      - action: utter_break
 
-  - story: black path
+  - story: saw path
     steps:
-      - intent: black
-      - action: utter_black
+      - intent: saw
+      - action: utter_saw
 
-  - story: apocalyspe path
+  - story: shaun path
     steps:
-      - intent: apocalyspe
-      - action: utter_apocalyspe
+      - intent: shaun
+      - action: utter_shaun
 
-  - story: future path
+  - story: dude path
     steps:
-      - intent: future
-      - action: utter_future
+      - intent: dude
+      - action: utter_dude
 
-  - story: element path
+  - story: shrek path
     steps:
-      - intent: element
-      - action: utter_element
-
-  - story: silence path
-    steps:
-      - intent: silence
-      - action: utter_silence
-
-  - story: scarface path
-    steps:
-      - intent: scarface
-      - action: utter_scarface
-
-  - story: suspects path
-    steps:
-      - intent: suspects
-      - action: utter_suspects
-
-  - story: train path
-    steps:
-      - intent: train
-      - action: utter_train
+      - intent: shrek
+      - action: utter_shrek

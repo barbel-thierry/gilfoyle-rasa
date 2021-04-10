@@ -13,32 +13,30 @@ class Message:
 
 class TestGame(unittest.TestCase):
     def test_initial_response(self):
-        launch_response = 'Toi. Toi.'
-
         self.assertEqual(
-            launch_response,
+            os.environ.get('GAME_RESPONSE'),
             game.launch(
-                Message('Tu y vas, toi ?', 'moi')
+                Message('Are you up?', 'Me')
             )
         )
 
         del os.environ['GAME']
         self.assertEqual(
-            launch_response,
+            os.environ.get('GAME_RESPONSE'),
             game.play(
-                Message('Tu y vas, toi ?', 'moi')
+                Message('Are you up?', 'Me')
             )
         )
 
     def test_winning_answer(self):
-        with patch('builtins.open', mock_open(read_data='{"riri": 5, "fifi": 0, "loulou": -3}')):
-            match_response = 'Bravo, fifi, tu as désormais 1 pt(s) !'
+        with patch('builtins.open', mock_open(read_data='{"You": 5, "Me": 0, "She": -3}')):
+            match_response = 'Well done, She, your score is now -2!'
 
             os.environ['GAME'] = 'on'
             self.assertEqual(
                 match_response,
                 game.match(
-                    Message('Mon toit.', 'fifi')
+                    Message(os.environ.get('GAME_WINNING_ANSWER'), 'She')
                 )
             )
 
@@ -46,24 +44,24 @@ class TestGame(unittest.TestCase):
             self.assertEqual(
                 match_response,
                 game.play(
-                    Message('Mon toit.', 'fifi')
+                    Message(os.environ.get('GAME_WINNING_ANSWER'), 'She')
                 )
             )
 
     def test_losing_answer(self):
         self.assertIsNone(game.match(
-            Message('Autre chose', 'moi')
+            Message('Some other line', 'Me')
         ))
 
     def test_check_passes(self):
         self.assertTrue(game.check(
-            Message(constants.GAME_TRIGGER, 'moi')
+            Message(constants.GAME_TRIGGER, 'Me')
         ))
         self.assertTrue(game.check(
-            Message(constants.GAME_WINNING_ANSWER, 'moi')
+            Message(constants.GAME_WINNING_ANSWER, 'Me')
         ))
 
     def test_check_fails(self):
         self.assertFalse(game.check(
-            Message('test', 'moi')
+            Message('Test', 'Me')
         ))
