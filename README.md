@@ -61,11 +61,13 @@ cd gilfoyle-rasa
 cp .env.example .env # don't forget to fill in values
 
 # update pip & create virtual environment
-python3 -m pip install -U pip
+pip3 install -U pip
+pip3 install rasa
 python3 -m venv venv
 source venv/bin/activate
 
 # install requirements
+pip install -U pip
 pip install -r requirements.txt
 
 # if you want to use any other language than english
