@@ -133,10 +133,9 @@ Just wait for Rasa server to be started, and you're good to go!!!
 
 ## ✨ Tips
 
-#### Use an anonymous object
+#### If you need an anonymous python object
 
 ```python
-# anonymous python object
 type('anonymous_class_name', (object,), {'property_name':'property_value'})
 ```
 
@@ -147,3 +146,8 @@ docker exec -it gilfoyle /bin/bash
 apt install curl
 curl localhost:5055/webhooks/rest/webhook -d '{"sender": "me", "message": "Have you a Press pass?"}'
 ```
+
+#### Slack (or others) can be used
+
+In this case, you would have to set up Flask (for instance) to expose
+your `gilfoyle/main.py` and install SlackClient via pip
