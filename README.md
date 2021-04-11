@@ -5,51 +5,14 @@
 
 #### powered by Rasa
 
-* [What is this application for?](https://github.com/barbel-thierry/gilfoyle-rasa#what-is-this-application-for)
-* [Check order](https://github.com/barbel-thierry/gilfoyle-rasa#-check-order)
 * [Installation](https://github.com/barbel-thierry/gilfoyle-rasa#-installation)
     1. [Get the code](https://github.com/barbel-thierry/gilfoyle-rasa#-get-the-code)
     2. [Pre-process](https://github.com/barbel-thierry/gilfoyle-rasa#%EF%B8%8F-pre-process)
     3. [Start Gilfoyle](https://github.com/barbel-thierry/gilfoyle-rasa#-start-gilfoyle)
     4. [Create your bot application on Discord](https://github.com/barbel-thierry/gilfoyle-rasa#-create-your-bot-application-on-discord)
     5. [Train your model](https://github.com/barbel-thierry/gilfoyle-rasa#-train-your-model)
+* [Check order](https://github.com/barbel-thierry/gilfoyle-rasa#-check-order)
 * [Tips](https://github.com/barbel-thierry/gilfoyle-rasa#-tips)
-
-## ❓What is this application for?
-
-The purpose is to provide a Discord bot that will react (or not) on
-specific words being posted on your channel(s).
-
-## ✅ Check order
-
-Gilfoyle will check for the first action filling requirements
-(**in that very order**):
-
-1.  Is it a scapegoat request?
-    > Ex: <u>`@Gilfoyle`</u> who's the <u>goat</u>?<br>
-    Gilfoyle will announce a random name from `SCAPEGOAT_TARGETS`
-    
-
-2.  Is it a request to get random values?
-    > Ex: <u>`@Gilfoyle`</u> give me <u>luck</u><br> 
-    Gilfoyle will announce random *number*, *letter*, *true*/*false*, *yes*/*no*,
-    *heads*/*tails*, *direction*, *chifumi*
-    
-
-3.  Is it a game request?
-    > Gilfoyle will announce a game launch / a victory (the `GAME_TRIGGER` has
-    been posted, Gilfoyle will help you with the `GAME_RESPONSE` for you to be
-    the first posting the `GAME_WINNING_ANSWER`)
-    
-
-4.  Is it a score request?
-    > Ex: <u>`@Gilfoyle`</u> what's the <u>score</u>?<br>
-    Gilfoyle will announce the current score board according to the
-    `SCAPEGOAT_TARGETS` list provided and to the game results
-    
-
-5.  Is a word matching any NLU intent?
-    > Gilfoyle will announce a quote linked with the previous posted message
 
 ## 💾 Installation
 
@@ -131,9 +94,40 @@ docker-compose up --build
 
 Just wait for Rasa server to be started, and you're good to go!!!
 
+## ✅ Check order
+
+Gilfoyle will check for the first action filling requirements
+(**in that very order**):
+
+1.  Is it a scapegoat request?
+    > Ex: <u>`@Gilfoyle`</u> who's the <u>goat</u>?<br>
+    Gilfoyle will announce a random name from `SCAPEGOAT_TARGETS`
+    
+
+2.  Is it a request to get random values?
+    > Ex: <u>`@Gilfoyle`</u> give me <u>luck</u><br> 
+    Gilfoyle will announce random *number*, *letter*, *true*/*false*, *yes*/*no*,
+    *heads*/*tails*, *direction*, *chifumi*
+    
+
+3.  Is it a game request?
+    > Gilfoyle will announce a game launch / a victory (the `GAME_TRIGGER` has
+    been posted, Gilfoyle will help you with the `GAME_RESPONSE` for you to be
+    the first posting the `GAME_WINNING_ANSWER`)
+    
+
+4.  Is it a score request?
+    > Ex: <u>`@Gilfoyle`</u> what's the <u>score</u>?<br>
+    Gilfoyle will announce the current score board according to the
+    `SCAPEGOAT_TARGETS` list provided and to the game results
+    
+
+5.  Is a word matching any NLU intent?
+    > Gilfoyle will announce a quote linked with the previous posted message
+
 ## ✨ Tips
 
-#### If you need an anonymous python object
+#### If you need an anonymous python object:
 
 ```python
 type('anonymous_class_name', (object,), {'property_name':'property_value'})
@@ -147,7 +141,7 @@ apt install curl
 curl localhost:5055/webhooks/rest/webhook -d '{"sender": "me", "message": "Have you a Press pass?"}'
 ```
 
-#### Slack (or others) can be used
+#### Slack (or others) can be used:
 
 In this case, you would have to set up Flask (for instance) to expose
 your `gilfoyle/main.py` and install SlackClient via pip
