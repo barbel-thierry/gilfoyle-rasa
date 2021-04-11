@@ -60,8 +60,7 @@ git clone git@github.com:barbel-thierry/gilfoyle-rasa.git
 cd gilfoyle-rasa
 cp .env.example .env # don't forget to fill in values
 
-# update pip & create virtual environment
-pip3 install -U pip
+# setup Rasa & create a virtual environment
 pip3 install rasa
 python3 -m venv venv
 source venv/bin/activate
@@ -112,7 +111,9 @@ You can read more on [stories](https://rasa.com/docs/rasa/stories/).
 ```shell
 cd chatbot
 rasa train
-rasa shell # if you want to test it from the CLI and generate some more test stories
+
+# if you want to test it from the CLI and generate some more test stories
+rasa shell
 ```
 
 ### 🦾 Create your bot application on Discord
@@ -122,22 +123,27 @@ Follow these [steps](https://discordpy.readthedocs.io/en/latest/discord.html)
 ### 💡 Start Gilfoyle
 
 ```shell
+# from the root of gilfoyle-rasa
 docker-compose up --build -d
 # or
-docker-compose up -d
+docker-compose up --build
 ```
 
-If you want to test your chatbot locally:
+Just wait for Rasa server to be started, and you're good to go!!!
+
+## ✨ Tips
+
+#### Use an anonymous object
+
+```python
+# anonymous python object
+type('anonymous_class_name', (object,), {'property_name':'property_value'})
+```
+
+#### If you want to test your chatbot locally:
 
 ```shell
 docker exec -it gilfoyle /bin/bash
 apt install curl
-curl localhost:5055/webhooks/rest/webhook -d '{"sender": "me", "message": "dallas"}'
-```
-
-## ✨ Tips
-
-```python
-# anonymous object
-type('anonymous_class_name', (object,), {'property_name':'property_value'})
+curl localhost:5055/webhooks/rest/webhook -d '{"sender": "me", "message": "Have you a Press pass?"}'
 ```

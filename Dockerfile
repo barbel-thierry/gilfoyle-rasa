@@ -8,6 +8,7 @@ WORKDIR /app
 
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
+RUN pip3 install rasa
 
 COPY gilfoyle /app/gilfoyle
 COPY chatbot /app/chatbot
