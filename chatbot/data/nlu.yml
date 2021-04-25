@@ -3,6 +3,7 @@ nlu:
 - intent: lotr
   examples: |
     - [pass](text)
+    - [shall](text)
 - intent: eternal
   examples: |
     - [meet](text)
@@ -38,6 +39,7 @@ nlu:
 - intent: sparta
   examples: |
     - [sparta](text)
+    - [greece](text)
 - intent: break
   examples: |
     - [glass](text)
@@ -61,3 +63,4 @@ nlu:
 - intent: nlu_fallback
   examples: |
     - i'm so hungry
+    - another one?

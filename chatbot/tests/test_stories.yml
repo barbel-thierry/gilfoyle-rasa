@@ -1,203 +1,181 @@
 stories:
-  - story: lotr path 1
-    steps:
-      - user: |
-          where's my [pass](text)?
-        intent: lotr
-      - action: utter_lotr
-
-  - story: lotr path 2
-    steps:
-      - user: |
-          [pass](text) the salt please
-        intent: lotr
-      - action: utter_lotr
-
-  - story: eternal path 1
-    steps:
-      - user: |
-          shall we [meet](text)?
-        intent: eternal
-      - action: utter_eternal
-
-  - story: eternal path 2
-    steps:
-      - user: |
-          i'm going to [Montauk](text) next week
-        intent: eternal
-      - action: utter_eternal
-
-  - story: darko path 1
-    steps:
-      - user: |
-          halloween [suits](text) are wild
-        intent: darko
-      - action: utter_darko
-
-  - story: darko path 2
-    steps:
-      - user: |
-          you [stupid](text) little marshmallow
-        intent: darko
-      - action: utter_darko
-
-  - story: spider path 1
-    steps:
-      - user: |
-          i need more [power](text)
-        intent: spider
-      - action: utter_spider
-
-  - story: spider path 2
-    steps:
-      - user: |
-          it's my [responsability](text)
-        intent: spider
-      - action: utter_spider
-
-  - story: amelie path 1
-    steps:
-      - user: |
-          i am the queen of [hearts](text)
-        intent: amelie
-      - action: utter_amelie
-
-  - story: amelie path 2
-    steps:
-      - user: |
-          i took some [artichokes](text) for dinner
-        intent: amelie
-      - action: utter_amelie
-
-  - story: django path 1
-    steps:
-      - user: |
-          just pay [attention](text) to what i'm about to tell you
-        intent: django
-      - action: utter_django
-
-  - story: django path 2
-    steps:
-      - user: |
-          [curiosity](text) is a sign of intelligence
-        intent: django
-      - action: utter_django
-
-  - story: nemo path 1
-    steps:
-      - user: |
-          i'm gonna learn to [swim](text) before summer
-        intent: nemo
-      - action: utter_nemo
-
-  - story: nemo path 2
-    steps:
-      - user: |
-          would you take me to the [swimming](text) pool?
-        intent: nemo
-      - action: utter_nemo
-
-  - story: potter path 1
-    steps:
-      - user: |
-          the [wizard](text) is performing a trick
-        intent: potter
-      - action: utter_potter
-
-  - story: potter path 2
-    steps:
-      - user: |
-          snow is just [magic](text)
-        intent: potter
-      - action: utter_potter
-
-  - story: bill path 1
-    steps:
-      - user: |
-          don't [kill](text) bugs
-        intent: bill
-      - action: utter_bill
-
-  - story: bill path 2
-    steps:
-      - user: |
-          i have to pay this [bill](text)
-        intent: bill
-      - action: utter_bill
-
-  - story: sparta path 1
-    steps:
-      - user: |
-          [sparta](text) and athens
-        intent: sparta
-      - action: utter_sparta
-
-  - story: break path 1
-    steps:
-      - user: |
-          would you like a [glass](text) of wine?
-        intent: break
-      - action: utter_break
-
-  - story: break path 2
-    steps:
-      - user: |
-          the chair is [broken](text)
-        intent: break
-      - action: utter_break
-
-  - story: saw path 1
-    steps:
-      - user: |
-          do you want to [play](text) hide and seek?
-        intent: saw
-      - action: utter_saw
-
-  - story: saw path 2
-    steps:
-      - user: |
-          it is not a [game](text)
-        intent: saw
-      - action: utter_saw
-
-  - story: shaun path 1
-    steps:
-      - user: |
-          [red](text) is my favorite color
-        intent: shaun
-      - action: utter_shaun
-
-  - story: shaun path 2
-    steps:
-      - user: |
-          there's a [stain](text) on your shirt
-        intent: shaun
-      - action: utter_shaun
-
-  - story: dude path 1
-    steps:
-      - user: |
-          don't move [dude](text), i got your back
-        intent: dude
-      - action: utter_dude
-
-  - story: dude path 2
-    steps:
-      - user: |
-          would you lend me your [car](text), [dude](text)?
-        intent: dude
-      - action: utter_dude
-
-  - story: shrek path 1
-    steps:
-      - user: |
-          [onions](text) always make me cry
-        intent: shrek
-      - action: utter_shrek
-
-  - story: shrek path 2
-    steps:
-      - user: |
-          the [ogre](text) will catch you up
-        intent: shrek
-      - action: utter_shrek
+- story: lotr path 1
+  steps:
+  - user: |
+      where's my [pass](text)?
+    intent: lotr
+  - action: utter_lotr
+- story: lotr path 2
+  steps:
+  - user: |
+      [pass](text) the salt please
+    intent: lotr
+  - action: utter_lotr
+- story: eternal path 1
+  steps:
+  - user: |
+      shall we [meet](text)?
+    intent: eternal
+  - action: utter_eternal
+- story: eternal path 2
+  steps:
+  - user: |
+      i'm going to [Montauk](text) next week
+    intent: eternal
+  - action: utter_eternal
+- story: darko path 1
+  steps:
+  - user: |
+      halloween [suits](text) are wild
+    intent: darko
+  - action: utter_darko
+- story: darko path 2
+  steps:
+  - user: |
+      you [stupid](text) little marshmallow
+    intent: darko
+  - action: utter_darko
+- story: spider path 1
+  steps:
+  - user: |
+      i need more [power](text)
+    intent: spider
+  - action: utter_spider
+- story: spider path 2
+  steps:
+  - user: |
+      it's my [responsability](text)
+    intent: spider
+  - action: utter_spider
+- story: amelie path 1
+  steps:
+  - user: |
+      i am the queen of [hearts](text)
+    intent: amelie
+  - action: utter_amelie
+- story: amelie path 2
+  steps:
+  - user: |
+      i took some [artichokes](text) for dinner
+    intent: amelie
+  - action: utter_amelie
+- story: django path 1
+  steps:
+  - user: |
+      just pay [attention](text) to what i'm about to tell you
+    intent: django
+  - action: utter_django
+- story: django path 2
+  steps:
+  - user: |
+      [curiosity](text) is a sign of intelligence
+    intent: django
+  - action: utter_django
+- story: nemo path 1
+  steps:
+  - user: |
+      i'm gonna learn to [swim](text) before summer
+    intent: nemo
+  - action: utter_nemo
+- story: nemo path 2
+  steps:
+  - user: |
+      would you take me to the [swimming](text) pool?
+    intent: nemo
+  - action: utter_nemo
+- story: potter path 1
+  steps:
+  - user: |
+      the [wizard](text) is performing a trick
+    intent: potter
+  - action: utter_potter
+- story: potter path 2
+  steps:
+  - user: |
+      snow is just [magic](text)
+    intent: potter
+  - action: utter_potter
+- story: bill path 1
+  steps:
+  - user: |
+      don't [kill](text) bugs
+    intent: bill
+  - action: utter_bill
+- story: bill path 2
+  steps:
+  - user: |
+      i have to pay this [bill](text)
+    intent: bill
+  - action: utter_bill
+- story: sparta path 1
+  steps:
+  - user: |
+      [sparta](text) and athens
+    intent: sparta
+  - action: utter_sparta
+- story: sparta path 2
+  steps:
+  - user: |
+      welcome to [greece](text)
+    intent: sparta
+  - action: utter_sparta
+- story: break path 1
+  steps:
+  - user: |
+      would you like a [glass](text) of wine?
+    intent: break
+  - action: utter_break
+- story: break path 2
+  steps:
+  - user: |
+      the chair is [broken](text)
+    intent: break
+  - action: utter_break
+- story: saw path 1
+  steps:
+  - user: |
+      do you want to [play](text) hide and seek?
+    intent: saw
+  - action: utter_saw
+- story: saw path 2
+  steps:
+  - user: |
+      it is not a [game](text)
+    intent: saw
+  - action: utter_saw
+- story: shaun path 1
+  steps:
+  - user: |
+      [red](text) is my favorite color
+    intent: shaun
+  - action: utter_shaun
+- story: shaun path 2
+  steps:
+  - user: |
+      there's a [stain](text) on your shirt
+    intent: shaun
+  - action: utter_shaun
+- story: dude path 1
+  steps:
+  - user: |
+      don't move [dude](text), i got your back
+    intent: dude
+  - action: utter_dude
+- story: dude path 2
+  steps:
+  - user: |
+      would you lend me your [car](text), [dude](text)?
+    intent: dude
+  - action: utter_dude
+- story: shrek path 1
+  steps:
+  - user: |
+      [onions](text) always make me cry
+    intent: shrek
+  - action: utter_shrek
+- story: shrek path 2
+  steps:
+  - user: |
+      the [ogre](text) will catch you up
+    intent: shrek
+  - action: utter_shrek

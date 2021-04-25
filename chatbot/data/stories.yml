@@ -1,77 +1,183 @@
 version: "2.0"
 
 stories:
-  - story: lotr path
+  - story: lotr path 1
     steps:
       - intent: lotr
+        entities:
+        - text: pass
       - action: utter_lotr
-
-  - story: eternal path
+  - story: lotr path 2
+    steps:
+    - intent: lotr
+      entities:
+      - text: shall
+    - action: utter_lotr
+  - story: eternal path 1
     steps:
       - intent: eternal
+        entities:
+        - text: meet
       - action: utter_eternal
-
-  - story: darko path
+  - story: eternal path 2
+    steps:
+    - intent: eternal
+      entities:
+      - text: montauk
+    - action: utter_eternal
+  - story: darko path 1
     steps:
       - intent: darko
+        entities:
+        - text: suits
       - action: utter_darko
-
-  - story: spider path
+  - story: darko path 2
+    steps:
+    - intent: darko
+      entities:
+      - text: stupid
+    - action: utter_darko
+  - story: spider path 1
     steps:
       - intent: spider
+        entities:
+        - text: power
       - action: utter_spider
-
-  - story: amelie path
+  - story: spider path 2
+    steps:
+    - intent: spider
+      entities:
+      - text: responsability
+    - action: utter_spider
+  - story: amelie path 1
     steps:
       - intent: amelie
+        entities:
+        - text: hearts
       - action: utter_amelie
-
-  - story: django path
+  - story: amelie path 2
+    steps:
+    - intent: amelie
+      entities:
+      - text: artichokes
+    - action: utter_amelie
+  - story: django path 1
     steps:
       - intent: django
+        entities:
+        - text: attention
       - action: utter_django
-
-  - story: nemo path
+  - story: django path 2
+    steps:
+    - intent: django
+      entities:
+      - text: curiosity
+    - action: utter_django
+  - story: nemo path 1
     steps:
       - intent: nemo
+        entities:
+        - text: swim
       - action: utter_nemo
-
-  - story: potter path
+  - story: nemo path 2
+    steps:
+    - intent: nemo
+      entities:
+      - text: swimming
+    - action: utter_nemo
+  - story: potter path 1
     steps:
       - intent: potter
+        entities:
+        - text: wizard
       - action: utter_potter
-
-  - story: bill path
+  - story: potter path 2
+    steps:
+    - intent: potter
+      entities:
+      - text: magic
+    - action: utter_potter
+  - story: bill path 1
     steps:
       - intent: bill
+        entities:
+        - text: kill
       - action: utter_bill
-
-  - story: sparta path
+  - story: bill path 2
+    steps:
+    - intent: bill
+      entities:
+      - text: bill
+    - action: utter_bill
+  - story: sparta path 1
     steps:
       - intent: sparta
+        entities:
+        - text: sparta
       - action: utter_sparta
-
-  - story: break path
+  - story: sparta path 2
+    steps:
+    - intent: sparta
+      entities:
+      - text: greece
+    - action: utter_sparta
+  - story: break path 1
     steps:
       - intent: break
+        entities:
+        - text: broken
       - action: utter_break
-
-  - story: saw path
+  - story: break path 2
+    steps:
+    - intent: break
+      entities:
+      - text: glass
+    - action: utter_break
+  - story: saw path 1
     steps:
       - intent: saw
+        entities:
+        - text: play
       - action: utter_saw
-
-  - story: shaun path
+  - story: saw path 2
+    steps:
+    - intent: saw
+      entities:
+      - text: game
+    - action: utter_saw
+  - story: shaun path 1
     steps:
       - intent: shaun
+        entities:
+        - text: red
       - action: utter_shaun
-
-  - story: dude path
+  - story: shaun path 2
+    steps:
+    - intent: shaun
+      entities:
+      - text: stain
+    - action: utter_shaun
+  - story: dude path 1
     steps:
       - intent: dude
+        entities:
+        - text: dude
       - action: utter_dude
-
-  - story: shrek path
+  - story: dude path 2
+    steps:
+    - intent: dude
+      entities:
+      - text: car
+    - action: utter_dude
+  - story: shrek path 1
     steps:
       - intent: shrek
+        entities:
+        - text: onions
       - action: utter_shrek
+  - story: shrek path 2
+    steps:
+    - intent: shrek
+      entities:
+      - text: ogre
+    - action: utter_shrek

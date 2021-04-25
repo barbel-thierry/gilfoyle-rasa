@@ -1,6 +1,66 @@
 version: "2.0"
 
 rules:
+- rule: lotr behavior
+  steps:
+  - intent: lotr
+  - action: utter_lotr
+- rule: eternal behavior
+  steps:
+  - intent: eternal
+  - action: utter_eternal
+- rule: darko behavior
+  steps:
+  - intent: darko
+  - action: utter_darko
+- rule: spider behavior
+  steps:
+  - intent: spider
+  - action: utter_spider
+- rule: amelie behavior
+  steps:
+  - intent: amelie
+  - action: utter_amelie
+- rule: django behavior
+  steps:
+  - intent: django
+  - action: utter_django
+- rule: nemo behavior
+  steps:
+  - intent: nemo
+  - action: utter_nemo
+- rule: potter behavior
+  steps:
+  - intent: potter
+  - action: utter_potter
+- rule: bill behavior
+  steps:
+  - intent: bill
+  - action: utter_bill
+- rule: sparta behavior
+  steps:
+  - intent: sparta
+  - action: utter_sparta
+- rule: break behavior
+  steps:
+  - intent: break
+  - action: utter_break
+- rule: saw behavior
+  steps:
+  - intent: saw
+  - action: utter_saw
+- rule: shaun behavior
+  steps:
+  - intent: shaun
+  - action: utter_shaun
+- rule: dude behavior
+  steps:
+  - intent: dude
+  - action: utter_dude
+- rule: shrek behavior
+  steps:
+  - intent: shrek
+  - action: utter_shrek
 - rule: Default behavior
   steps:
   - intent: nlu_fallback

@@ -1,75 +1,70 @@
 version: '2.0'
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
 entities:
-  - text
-
+- text
 intents:
-  - nlu_fallback
-  - lotr
-  - eternal
-  - darko
-  - spider
-  - amelie
-  - django
-  - nemo
-  - potter
-  - bill
-  - sparta
-  - break
-  - saw
-  - shaun
-  - dude
-  - shrek
-
+- lotr
+- eternal
+- darko
+- spider
+- amelie
+- django
+- nemo
+- potter
+- bill
+- sparta
+- break
+- saw
+- shaun
+- dude
+- shrek
+- nlu_fallback
 responses:
   utter_lotr:
-    - text: "You shall not pass! - The Lord of the Rings: The Fellowship of the Ring (2001)"
+  - text: "You shall not pass! - The Lord of the Rings: The Fellowship of the Ring (2001)"
   utter_eternal:
-    - text: Meet me in Montauk. - Eternal Sunshine of the Spotless Mind (2004)
+  - text: Meet me in Montauk. - Eternal Sunshine of the Spotless Mind (2004)
   utter_darko:
-    - text: Why are you wearing that stupid man suit? - Donnie Darko (2001)
+  - text: Why are you wearing that stupid man suit? - Donnie Darko (2001)
   utter_spider:
-    - text: With great power comes great responsibility. - Spider-Man (2002)
+  - text: With great power comes great responsibility. - Spider-Man (2002)
   utter_amelie:
-    - text: Even artichokes have hearts. - Amélie (2001)
+  - text: Even artichokes have hearts. - Amélie (2001)
   utter_django:
-    - text: You had my curiosity. But now you have my attention. - Django Unchained (2012)
+  - text: You had my curiosity. But now you have my attention. - Django Unchained (2012)
   utter_nemo:
-    - text: Just keep swimming. - Finding Nemo (2003)
+  - text: Just keep swimming. - Finding Nemo (2003)
   utter_potter:
-    - text: You're a wizard, 'arry. - Harry Potter and the Sorcerer's Stone (2001)
+  - text: You're a wizard, 'arry. - Harry Potter and the Sorcerer's Stone (2001)
   utter_bill:
-    - text: "I am gonna kill Bill. - Kill Bill: Vol. 2 (2004)"
+  - text: "I am gonna kill Bill. - Kill Bill: Vol. 2 (2004)"
   utter_sparta:
-    - text: This is Sparta! - 300 (2006)
+  - text: This is Sparta! - 300 (2006)
   utter_break:
-    - text: They called me Mr. Glass. - Unbreakable (2000)
+  - text: They called me Mr. Glass. - Unbreakable (2000)
   utter_saw:
-    - text: I want to play a game. - Saw (2004)
+  - text: I want to play a game. - Saw (2004)
   utter_shaun:
-    - text: You've got red on you. - Shaun of the Dead (2004)
+  - text: You've got red on you. - Shaun of the Dead (2004)
   utter_dude:
-    - text: Dude, where's my car? - Dude, Where's My Car? (2000)
+  - text: Dude, where's my car? - Dude, Where's My Car? (2000)
   utter_shrek:
-    - text: Ogres are like onions. - Shrek (2001)
-
+  - text: Ogres are like onions. - Shrek (2001)
 actions:
-  - utter_lotr
-  - utter_eternal
-  - utter_darko
-  - utter_spider
-  - utter_amelie
-  - utter_django
-  - utter_nemo
-  - utter_potter
-  - utter_bill
-  - utter_sparta
-  - utter_break
-  - utter_saw
-  - utter_shaun
-  - utter_dude
-  - utter_shrek
+- utter_lotr
+- utter_eternal
+- utter_darko
+- utter_spider
+- utter_amelie
+- utter_django
+- utter_nemo
+- utter_potter
+- utter_bill
+- utter_sparta
+- utter_break
+- utter_saw
+- utter_shaun
+- utter_dude
+- utter_shrek

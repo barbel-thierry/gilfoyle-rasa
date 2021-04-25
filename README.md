@@ -25,6 +25,7 @@ cp .env.example .env # don't forget to fill in values
 
 # setup Rasa & create a virtual environment
 pip3 install rasa
+pip3 install "rasa[spacy]"
 python3 -m venv venv
 source venv/bin/activate
 
@@ -47,12 +48,12 @@ Rasa advises to pick the `md` version of any [language](https://spacy.io/usage/m
 
 * <dl>
   <dt>chatbot/data/nlu.yml</dt>
-  <dd>Where you define what words could trigger each intent of yours</dd>
+  <dd>Where you define what keywords could trigger each intent of yours</dd>
 </dl>
 
 * <dl>
   <dt>chatbot/data/stories.yml</dt>
-  <dd>Where you describe the basic behavior of your chatbot</dd>
+  <dd>Where you describe the basic examples of your chatbot</dd>
 </dl>
 
 * <dl>
@@ -63,33 +64,31 @@ Rasa advises to pick the `md` version of any [language](https://spacy.io/usage/m
 
 * <dl>
   <dt>chatbot/data/rules.yml</dt>
-  <dd>Where you set the default action to perform when no other action
-    is chosen</dd>
+  <dd>Where you set actions to perform when hapenning specific scenarios</dd>
 </dl>
 
-You can read more on [stories](https://rasa.com/docs/rasa/stories/).
+You can read more on [data format](https://rasa.com/docs/rasa/training-data-format/).
 
 ### 💪 Train your model
 
 ```shell
 cd chatbot
 rasa train
-
-# if you want to test it from the CLI and generate some more test stories
-rasa shell
 ```
+
+Other commands [here](https://rasa.com/docs/rasa/command-line-interface).
 
 ### 🦾 Create your bot application on Discord
 
-Follow these [steps](https://discordpy.readthedocs.io/en/latest/discord.html)
+Follow these [steps](https://discordpy.readthedocs.io/en/latest/discord.html).
 
 ### 💡 Start Gilfoyle
 
 ```shell
 # from the root of gilfoyle-rasa
-docker-compose up --build -d
+docker compose up --build -d
 # or
-docker-compose up --build
+docker compose up --build
 ```
 
 Just wait for Rasa server to be started, and you're good to go!!!
